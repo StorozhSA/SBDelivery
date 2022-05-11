@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterFragment">
+
+    <TextView
+        android:id="@+id/reg_tv_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/labelFirstName"
+        android:textColor="@color/color_text_view"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_first_name"
+        app:layout_constraintStart_toStartOf="@+id/reg_et_first_name" />
+
+    <TextView
+        android:id="@+id/reg_tv_err_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/err_only_letters"
+        android:textColor="@color/color_error"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_first_name"
+        app:layout_constraintEnd_toEndOf="@+id/reg_et_first_name"
+        tools:text="@string/err_only_letters"
+        tools:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/reg_et_first_name"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reg_tv_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/labelLastName"
+        android:textColor="@color/color_text_view"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_last_name"
+        app:layout_constraintStart_toStartOf="@id/reg_et_last_name" />
+
+    <TextView
+        android:id="@+id/reg_tv_err_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/err_only_letters"
+        android:textColor="@color/color_error"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_last_name"
+        app:layout_constraintEnd_toEndOf="@+id/reg_et_last_name"
+        tools:text="@string/err_only_letters"
+        tools:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/reg_et_last_name"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_et_first_name" />
+
+    <TextView
+        android:id="@+id/reg_tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/labelEmail"
+        android:textColor="@color/color_text_view"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_email"
+        app:layout_constraintStart_toStartOf="@id/reg_et_email" />
+
+    <TextView
+        android:id="@+id/reg_tv_err_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/err_not_valid_email"
+        android:textColor="@color/color_error"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_email"
+        app:layout_constraintEnd_toEndOf="@+id/reg_et_email"
+        tools:text="@string/err_not_valid_email"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/reg_et_email"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_et_last_name" />
+
+    <TextView
+        android:id="@+id/reg_tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/labelPassword"
+        android:textColor="@color/color_text_view"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_pass"
+        app:layout_constraintStart_toStartOf="@id/reg_et_pass" />
+
+    <TextView
+        android:id="@+id/reg_tv_err_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/err_empty_field"
+        android:textColor="@color/color_error"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/reg_et_pass"
+        app:layout_constraintEnd_toEndOf="@+id/reg_et_pass"
+        tools:text="@string/err_empty_field"
+        tools:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/reg_et_pass"
+        style="@style/StyleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_et_email" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reg_btn_registration"
+        style="@style/StyleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/labelReg"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_et_pass"
+        app:strokeColor="@color/color_stroke"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

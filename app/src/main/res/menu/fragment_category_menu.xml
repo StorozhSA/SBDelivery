@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sort_dishes"
+        android:icon="@drawable/ic_baseline_sort"
+        android:title="@string/label_sort"
+        app:showAsAction="ifRoom">
+        <!-- "file" submenu -->
+        <menu>
+            <item
+                android:id="@+id/sort_alphabet"
+                android:title="@string/Alphabetically" />
+            <item
+                android:id="@+id/sort_popular"
+                android:title="@string/ByPopularity" />
+            <item
+                android:id="@+id/sort_rating"
+                android:title="@string/ByRating" />
+        </menu>
+    </item>
+
+
+</menu>

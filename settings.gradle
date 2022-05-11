@@ -1,0 +1,6 @@
+include ':proto'
+include ':models'
+include ':app'
+rootProject.name = "SB Delivery"
+include ':custom'
+include ':custom_app'

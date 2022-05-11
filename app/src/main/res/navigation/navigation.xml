@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ru.skillbranch.sbdelivery.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile_login"
+        android:name="ru.skillbranch.sbdelivery.ui.login.LoginFragment"
+        android:label="@string/labelLogin">
+        <action
+            android:id="@+id/action_nav_profile_login_to_nav_profile_register"
+            app:destination="@id/nav_profile_register" />
+        <argument
+            android:name="fail_destination"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_nav_profile_login_to_nav_recovery1"
+            app:destination="@id/nav_recovery1" />
+        <action
+            android:id="@+id/action_nav_profile_login_to_nav_profile"
+            app:destination="@id/nav_profile"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="ru.skillbranch.sbdelivery.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.skillbranch.sbdelivery.ui.profile.ProfileFragment"
+        android:label="@string/title_profile" />
+    <action
+        android:id="@+id/action_global_nav_home"
+        app:destination="@id/nav_home" />
+    <action
+        android:id="@+id/action_global_nav_about"
+        app:destination="@id/nav_about" />
+    <fragment
+        android:id="@+id/nav_profile_register"
+        android:name="ru.skillbranch.sbdelivery.ui.register.RegisterFragment"
+        android:label="@string/labelReg"
+        tools:layout="@layout/fragment_register" />
+    <action
+        android:id="@+id/action_global_nav_profile_register"
+        app:destination="@id/nav_profile_register" />
+    <fragment
+        android:id="@+id/nav_recovery1"
+        android:name="ru.skillbranch.sbdelivery.ui.recovery.RecoveryFragment"
+        android:label="@string/labelRecoveryPassword"
+        tools:layout="@layout/fragment_recovery">
+        <action
+            android:id="@+id/action_nav_recovery1_to_nav_recovery2"
+            app:destination="@id/nav_recovery2" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_recovery1"
+        app:destination="@id/nav_recovery1" />
+    <fragment
+        android:id="@+id/nav_recovery2"
+        android:name="ru.skillbranch.sbdelivery.ui.recovery2.Recovery2Fragment"
+        android:label="@string/labelRecoveryPassword"
+        tools:layout="@layout/fragment_recovery2">
+        <action
+            android:id="@+id/action_nav_recovery2_to_nav_recovery3"
+            app:destination="@id/nav_recovery3" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_recovery2"
+        app:destination="@id/nav_recovery2" />
+    <fragment
+        android:id="@+id/nav_recovery3"
+        android:name="ru.skillbranch.sbdelivery.ui.recovery3.Recovery3Fragment"
+        android:label="@string/labelRecoveryPassword"
+        tools:layout="@layout/fragment_recovery3">
+        <argument
+            android:name="recovery_code"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_recovery3"
+        app:destination="@id/nav_recovery3" />
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="ru.skillbranch.sbdelivery.ui.menu.MenuFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_nav_menu_to_nav_categories"
+            app:destination="@id/nav_categories" />
+        <action
+            android:id="@+id/action_nav_menu_to_categoriesPageFragment"
+            app:destination="@id/nav_categories_page" />
+        <action
+            android:id="@+id/action_nav_menu_to_nav_search"
+            app:destination="@id/nav_search" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_menu"
+        app:destination="@id/nav_menu" />
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="ru.skillbranch.sbdelivery.ui.categories.CategoriesFragment"
+        android:label="Категории"
+        tools:layout="@layout/fragment_category">
+        <argument
+            android:name="parent_category_id"
+            android:defaultValue="root"
+            app:argType="string" />
+        <argument
+            android:name="parent_category_name"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_categories"
+        app:destination="@id/nav_categories" />
+    <fragment
+        android:id="@+id/nav_categories_page"
+        android:name="ru.skillbranch.sbdelivery.ui.categories.CategoriesPageFragment"
+        android:label="-" />
+    <action
+        android:id="@+id/action_global_nav_categories_page"
+        app:destination="@id/nav_categories_page" />
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="ru.skillbranch.sbdelivery.ui.search.SearchFragment"
+        android:label="Поиск"
+        tools:layout="@layout/fragment_search" />
+    <action
+        android:id="@+id/action_global_nav_search"
+        app:destination="@id/nav_search" />
+    <action
+        android:id="@+id/action_global_nav_profile_login"
+        app:destination="@id/nav_profile_login" />
+    <fragment
+        android:id="@+id/nav_dish"
+        android:name="ru.skillbranch.sbdelivery.ui.dish.DishFragment"
+        android:label="@string/label_dish"
+        tools:layout="@layout/fragment_dish" />
+    <action
+        android:id="@+id/action_global_nav_dish"
+        app:destination="@id/nav_dish"
+        app:popUpTo="@id/nav_categories" />
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="ru.skillbranch.sbdelivery.ui.favorites.FavoritesPageFragment"
+        android:label="@string/label_favorites"
+        tools:layout="@layout/fragment_favorite_page" />
+    <action
+        android:id="@+id/action_global_nav_favorites"
+        app:destination="@id/nav_favorites" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="ru.skillbranch.sbdelivery.ui.cart.CartFragment"
+        android:label="@string/label_shop_cart"
+        tools:layout="@layout/fragment_cart" />
+    <action
+        android:id="@+id/action_global_nav_cart"
+        app:destination="@id/nav_cart" />
+</navigation>

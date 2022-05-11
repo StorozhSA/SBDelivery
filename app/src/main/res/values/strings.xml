@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">SB Delivery</string>
+    <string name="E_UNKNOWN">Unknown error</string>
+    <string name="E_LOGIN_FAILED">Unknown error of login process</string>
+    <string name="E_REG_EXISTS">This user already exists</string>
+    <string name="E_LOGIN_EXISTS">This login already exists</string>
+    <string name="E_LOGIN_ERROR">Incorrect login or password</string>
+    <string name="E_SUCCESS">Success</string>
+    <string name="E_REG_FAILED">Registration error</string>
+    <string name="E_RECOVERY_EMAIL_FAILED">Recovery E-mail failed</string>
+    <string name="E_RECOVERY_EMAIL_LESS_TIME">The code was already sent less than 3 minutes ago</string>
+    <string name="E_RECOVERY_CODE_FAILED">Unknown error while restoring code</string>
+    <string name="E_RECOVERY_CODE_WRONG">Wrong code</string>
+    <string name="E_RECOVERY_PASSWORD_FAILED">Unknown error of recovery password</string>
+    <string name="E_RECOVERY_PASSWORD_EXPIRED">Code expired</string>
+    <string name="E_REFRESH_TOKEN_FAILED">Unknown error refresh token</string>
+    <string name="E_REFRESH_TOKEN_EXPIRED">Time refresh expired</string>
+    <string name="E_PASSWORD_CHANGE_FAILED">Unknown error of change password</string>
+    <string name="E_FAVORITE_FAILED">Unknown error of favorite</string>
+    <string name="E_GET_RECOMMENDED_FAILED">Unknown error of recommended</string>
+    <string name="E_GET_CATEGORIES_FAILED">Unknown error of get categories</string>
+    <string name="E_NOT_MODIFIED">Not modified</string>
+    <string name="E_GET_DISHES_FAILED">Unknown error of get dishes</string>
+    <string name="E_GET_REVIEWS_FAILED">Unknown error of get reviews</string>
+    <string name="E_ADD_REVIEWS_FAILED">Unknown error of add review</string>
+    <string name="E_GET_OR_UPDATE_CART_FAILED">Unknown error of get or update cart</string>
+    <string name="E_CHECK_ADDRESS_FAILED">Unknown error of check address</string>
+    <string name="E_ORDER_NEW_FAILED">Unknown  error of create new order</string>
+    <string name="E_GET_ORDERS_FAILED">Unknown error of get orders list</string>
+    <string name="E_GET_ORDERS_STATUSES_FAILED">Unknown error of get oders statuses</string>
+    <string name="E_ORDER_CANCEL_FAILED">Unknown error of cancel order</string>
+    <string name="E_NOT_FOUND">Object not found</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+
+    <string name="labelFirstName">Firstname</string>
+    <string name="labelLastName">Lastname</string>
+    <string name="labelEmail" translatable="false">E-mail</string>
+    <string name="labelPassword">Password</string>
+    <string name="labelReg">Registration</string>
+
+    <string name="userFirstName">Jone</string>
+    <string name="userLastName">Doe</string>
+    <string name="userEmail" translatable="false">example@mail.com</string>
+    <string name="userPassword" translatable="false">1234567890</string>
+    <string name="labelLogin">Login</string>
+    <string name="title_home">Home</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_notifications">Notiaications</string>
+    <string name="title_about">About</string>
+    <string name="enter" translatable="false">Enter</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="labelSave">Save</string>
+    <string name="labelChange">Change</string>
+    <string name="labelChangePassword">Change password</string>
+    <string name="labelCancel">Cancel</string>
+    <string name="E_PROFILE_GET_FAILED">Unknown error of get user profile</string>
+    <string name="err_only_letters">Only letters</string>
+    <string name="err_not_valid_email">Not valid E-mail</string>
+    <string name="err_empty_field">Empty field</string>
+    <string name="labelLogout">Logout</string>
+    <string name="label_password_old">Old password</string>
+    <string name="label_password_new">New password</string>
+    <string name="label_forgot_password">Forgot password?</string>
+    <string name="E_NOT_CONNECTED">Network not connected</string>
+    <string name="E_TIMEOUT_SOCKET">Network timeout expired</string>
+    <string name="labelSend">Send</string>
+    <string name="textRecovPassword">Enter the email you used to register and we will send you a password reset code</string>
+    <string name="labelRecoveryPassword">Recovery password</string>
+    <string name="labelCheckCode">Input check code</string>
+    <string name="textNewPassword">Enter a new password</string>
+    <string name="labelPasswordReplace">Confirm password</string>
+    <string name="label_sort">Sort</string>
+    <string name="label_search">Search</string>
+    <string name="lorem" translatable="false">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		In mollis est vitae erat laoreet consectetur. Mauris dui mauris,
+		dictum vel egestas vel, porta sed ante. Phasellus congue viverra ipsum,
+		in elementum arcu ultricies nec.Morbi tincidunt nisl lacinia, placerat nisi eget, luctus tortor.
+		Morbi efficitur dictum leo, sit amet volutpat lorem sodales nec. Quisque et erat et turpis fringilla condimentum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor vulputate libero vitae iaculis.
+		Curabitur id blandit quam. Praesent massa ante, pulvinar vitae sagittis commodo, scelerisque porttitor eros.
+		Mauris suscipit a enim nec congue. Mauris tristique cursus aliquet. Nunc quis hendrerit nunc. Praesent tristique tellus purus,
+		a pretium ex gravida id. Cras laoreet malesuada nulla, at bibendum metus ultricies a. Fusce eu ornare arcu. Proin ut molestie est.
+		Vestibulum quis vehicula erat. Nam sed tempus nibh. Sed tortor ante, maximus venenatis odio sed, ultricies maximus lectus.
+		Aliquam sed volutpat ligula. Integer bibendum, magna ac lacinia suscipit,
+		risus libero rutrum justo, sed tempus augue tellus eget est. Curabitur convallis augue nisl,
+		id efficitur urna posuere faucibus. Ut sed egestas nulla, eu finibus metus. Nunc a arcu ante.
+		Aenean ullamcorper dolor non condimentum congue. Aenean mauris nunc, pellentesque at placerat vitae,
+		aliquet quis orci. Curabitur maximus augue ut bibendum sagittis.
+	</string>
+    <string name="Alphabetically">Alphabetically</string>
+    <string name="ByPopularity">By popularity</string>
+    <string name="ByRating">By rating</string>
+    <string name="is_registered">Your account has been created</string>
+    <string name="you_login">You are logged in</string>
+    <string name="you_logout">You log out</string>
+    <string name="label_favorites">Favorites</string>
+    <string name="label_dish">Dish</string>
+    <string name="label_action">ACTION</string>
+    <string name="label_shop_cart">Shop cart</string>
+</resources>

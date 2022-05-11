@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recovery2.Recovery2Fragment">
+
+    <TextView
+        android:id="@+id/recov2_tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="3dp"
+        android:text="@string/labelCheckCode"
+        android:textColor="@color/color_text_view"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/recov2_et_d1"
+        app:layout_constraintStart_toStartOf="@+id/recov2_et_d1" />
+
+    <EditText
+        android:id="@+id/recov2_et_d1"
+        style="@style/StyleEditTextForCode"
+        android:layout_width="65dp"
+        android:layout_height="51dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusRight="@id/recov2_et_d2"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recov2_et_d2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/recov2_et_d2"
+        style="@style/StyleEditTextForCode"
+        android:layout_width="65dp"
+        android:layout_height="51dp"
+        android:enabled="false"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusLeft="@id/recov2_et_d1"
+        android:nextFocusRight="@id/recov2_et_d3"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recov2_et_d3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/recov2_et_d1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/recov2_et_d3"
+        style="@style/StyleEditTextForCode"
+        android:layout_width="65dp"
+        android:layout_height="51dp"
+        android:enabled="false"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusLeft="@id/recov2_et_d2"
+        android:nextFocusRight="@id/recov2_et_d4"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recov2_et_d4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/recov2_et_d2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/recov2_et_d4"
+        style="@style/StyleEditTextForCode"
+        android:layout_width="65dp"
+        android:layout_height="51dp"
+        android:enabled="false"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusRight="@id/recov2_et_d2"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/recov2_et_d3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
